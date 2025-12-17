@@ -310,7 +310,7 @@ sudo [command]
 # Reset DNS configuration
 echo "nameserver 1.1.1.1" > /etc/resolv.conf
 echo "nameserver 8.8.8.8" >> /etc/resolv.conf
-
+bash -c 'echo -e "[Resolve]\nDNS=1.1.1.1" > /etc/systemd/resolved.conf && systemctl enable systemd-resolved'
 # Restart networking
 systemctl restart networking
 ```
