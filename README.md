@@ -38,14 +38,19 @@ echo -e "\nDependencies installed\n" && \
 curl -s -O https://raw.githubusercontent.com/xzoytun/sdn02/main/gerhana && \
 chmod +x gerhana && \
 ./gerhana
-Configure DNS (Recommended)
+```
+# Configure DNS (Recommended)
+```
 echo "nameserver 1.1.1.1" > /etc/resolv.conf
 bash -c 'echo -e "[Resolve]\nDNS=1.1.1.1" > /etc/systemd/resolved.conf && systemctl enable systemd-resolved'
-Install Fail2ban
+```
+# Install Fail2ban
+```
 curl -o /usr/local/bin/extrimer https://raw.githubusercontent.com/xzoytun/sdn02/main/jail.sh && \
 chmod +x /usr/local/bin/extrimer && \
 extrimer
-💻 Supported Operating Systems
+```
+# 💻 Supported Operating Systems
 Distribution
 Version
 Status
