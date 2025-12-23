@@ -99,8 +99,4 @@ bandwidth     # View bandwidth usage
 MIT License - lihat file LICENSE
 🌟 Support
 Jika bermanfaat, berikan ⭐ di repository!
-�
-
 Made with ❤️ by xzoytun
-�
-```
